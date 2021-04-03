@@ -1,0 +1,168 @@
+*{
+	margin 0;padding 0;box-sizing: border-box;
+	font-family: 'Josefin Sans',sans-serif;
+}
+header {width:100;height:100vh;
+	 background-image:url('wolf.jpg'),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+	background-size:cover;
+	background-repeat:no-repeat;
+	 }
+
+nav{
+	width: 100%;height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white;display: flex;justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+nav .logo{
+	width:25%;text-align: center;
+}
+nav .menu{
+	width: 16%;
+	display:flex;justify-content: space-between;
+}
+nav .menu a{
+	width: 30%;
+	text-decoration: none;color: white;
+	font-weight: bold;
+
+}
+nav .menu a:last-child{
+	color:#00b894;
+}
+main{
+	width: 100%;
+	height:85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; color: white;
+}
+section{
+
+}
+
+section h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 3px black;
+	
+}
+section h1{
+	text-shadow: 2px 1px 5px black;
+	margin: 100px 0 50px 0;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+
+}
+section p{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+section a{
+	padding: 11px 10px;
+	border-radius: 20px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+	text-decoration: none;
+	letter-spacing: 0px;
+	transition: all .5s ease;
+}
+section .btnone{
+	
+	background:#fff;
+	color:#000;
+}
+.btnone:hover{
+	background:#00b894;
+	color:#000;
+}
+
+section .btntwo{
+	
+	background:#00b894;
+	color:#000;
+}
+.btntwo:hover{
+	background:#fff;
+	color:#000;
+}
+
+.change_content:after{
+	content: '';
+	animation: change_text 10s infinite linear ease;
+	color: black;
+}
+
+@keyframes change_text{
+	0%{content:"Studies";}
+	20%{ content: "Latest news"; }
+	35%{ content: "Food"; }
+	60%{ content: "Music"; }
+	80%{ content: "Gaming"; }
+	100%{ content: "Culture"; }
+
+	
+}
+h1:after{
+	content: 'change_text';
+	font-size: 100%;
+	animation-name: change_text;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation: change_text 10s infinite linear;
+	color: #00b894;
+
+
+
+}
+@keyframes change_text{
+	0%{content:"Studies";}
+	20%{ content: "Latest news"; }
+	35%{ content: "Food"; }
+	60%{ content: "Music"; }
+	80%{ content: "Entertainment"; }
+	100%{ content: "Culture"; }
+
+style{
+	content: 'bgchange';
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation: bgchange 10s infinite linear;
+
+}
+@keyframes bgchange{
+	0%{content:"background-image:url(stud.jpg);" }
+	20%{content:"background-image:url(news.jpg);" }
+	35%{content:"background-image:url(food.jpg);" }
+	60%{content:"background-image:url(music.jpg);" }
+	80%{content:"background-image:url(enter.jpg);" }
+	100%{content:"background-image:url(cult.jpg);" }
+}
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	background-image: url(stud.jpg);
+}
+
+
+
+
+
+
